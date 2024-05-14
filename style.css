@@ -63,14 +63,19 @@ nav {
 /* Hero Section Styles */
 .hero-section {
 	position: relative;
-	height: 500px;
+	/* height: 500px; */
 	overflow: hidden;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 .hero-image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	
 }
 
 .find-offer {
@@ -145,12 +150,10 @@ nav {
 
 
 
-
-
 .why-zappr {
 	text-align: center;
     position: relative;
-	top:-80px
+	top:90px
 }
 
 .why-zappr button {
@@ -165,6 +168,299 @@ nav {
     text-decoration: underline;
     color: #fff;
 }
+
+#crypto-background {
+	background-color: #ffd700; 
+	padding: 100px 0;
+	text-align: center;
+  }
+  
+  .crypto-currency-image {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+  
+  .crypto-currency-image span {
+	font-size: 24px; 
+	font-weight: bold;
+	margin-right: 20px;
+  }
+  
+  .crypto-icons img {
+	max-width: 100%;
+	height: auto;
+  }
+
+  /* Features Section Styles */
+.features {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+  }
+  
+  .feature-cards {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+	
+  }
+  
+  .feature-card {
+
+	padding: 30px;
+	
+	text-align: center;
+	position: relative;
+  }
+
+  .feature-card:not(:nth-child(3))::after {
+	content: "";
+	position: absolute;
+	bottom: 180px;
+	left: 100%;
+	transform: translateX(-50%);
+	width: 40%;
+	height: 2px;
+	background-color: #ccc;
+  }
+  
+  
+  .feature-icon {
+	font-size: 48px;
+	margin-bottom: 10px;
+  }
+  
+  .feature-card h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+	margin-bottom: 10px;
+  }
+  
+  .feature-card a {
+	
+	text-decoration: none;
+	
+  }
+
+  .trust-bar{
+	padding-top: 30px;
+	text-align: center;
+	margin: 0 auto;
+  }
+
+  .trust-bar a {
+	color: #000;
+	text-decoration: none;
+
+	border: 2px solid gainsboro;
+	border-radius: 20px;
+	padding: 15px 25px;
+	text-align: center;
+  }
+
+  /* Buy/Sell Section Styles */
+  #buy-sell-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 100px 0;
+
+  }
+
+
+  .buy-section h2,
+  .sell-section
+   h2{
+	margin-bottom: 20px;
+  }
+  
+  .vertical-line {
+	width: 2px;
+	height: 100%;
+	background-color: #a07c7c;
+	margin: 0 20px;
+  }
+  
+  .payment-options {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+  }
+  
+  .payment-option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .payment-details {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+
+	/* justify-content: space-evenly; */
+  }
+  
+  
+  .payment-icon {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+  }
+  
+  .payment-icon img {
+	max-width: 100%;
+	max-height: 100%;
+  }
+  
+
+  
+  .payment-name {
+	font-weight: bold;
+  }
+  
+  .payment-rate {
+	font-size: 0.8rem;
+	color: #666;
+  }
+  
+  .payment-price {
+	font-weight: bold;
+	color: #4CAF50;
+  }
+
+
+
+  /* .vertical-line{
+
+  } */
+  
+  .view-offers {
+	padding: 10px 20px;
+	background-color: #0c0c0c;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+  .view-offers-btn{
+	margin: 0 auto;
+	text-align: center;
+  }
+
+  /* crypto section */
+
+  #crypto-sections {
+	background-color: #CFBAFF;
+	
+	
+	text-align: center;
+  }
+
+  .crypto-section{
+	padding: 100px 20px;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	
+  }
+  
+  .crypto-section h2 {
+	font-size: 28px;
+	color: #121212; 
+	margin-bottom: 20px;
+  }
+  
+  .get-started-btn {
+	background-color: #191819; 
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+  }
+  
+  .get-started-btn:hover {
+	background-color: #7b68ee; 
+
+  }
+
+  /* footer part */
+
+  .footer {
+	background-color: #333;
+	color: #fff;
+	padding: 40px 0;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .footer-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .footer-col {
+	flex: 1 1 200px;
+	margin-bottom: 30px;
+  }
+  
+  .footer-col h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+  
+  .footer-col ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .footer-col ul li {
+	margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .footer-bottom {
+	text-align: center;
+	margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+	.footer-row {
+	  flex-direction: column;
+	}
+  
+	.footer-col {
+	  width: 100%;
+	  text-align: center;
+	}
+  }
+  
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
